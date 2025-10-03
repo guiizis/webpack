@@ -1,0 +1,11 @@
+.main-title {
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: color 0.3s ease;
+}
