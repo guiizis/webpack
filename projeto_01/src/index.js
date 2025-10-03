@@ -1,1 +1,3 @@
-console.log('is just a test');
+import { saudacao } from './saudacao.js';
+
+console.log(saudacao('zel'));
