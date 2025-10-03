@@ -23,6 +23,7 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "mini-css-extract-plugin": "^2.9.4"
+    "mini-css-extract-plugin": "^2.9.4",
+    "terser-webpack-plugin": "^5.3.14"
   }
 }
