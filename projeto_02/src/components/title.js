@@ -1,6 +1,7 @@
 import { ImageCustom } from './image';
 import test from '../img/image.png';
 import './title.css';
+import { Button } from './button';
 
 class Title {
   create(title) {
@@ -10,8 +11,11 @@ class Title {
 
     document.querySelector('body').appendChild(h1);
 
-    const image = new ImageCustom();
-    image.insertAnImage(test);
+    // const image = new ImageCustom();
+    // image.insertAnImage(test);
+
+    // const button = new Button();
+    // button.create('Clique aqui');
   }
 };
 
