@@ -176,7 +176,17 @@ eval("{module.exports = __webpack_require__.p + \"47748b9cef8dcc212096.png\";\n\
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_title__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/title */ \"./src/components/title.js\");\nfunction _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }\nfunction _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }\n\nvar title = new _components_title__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ntitle.create('Hello Webpack!');\nvar test = {\n  a: 'teste',\n  b: '123',\n  c: '456',\n  d: 'lalala'\n};\nvar a = test.a,\n  rest = _objectWithoutProperties(test, [\"a\"]);\nconsole.log(a, rest);\n\n//# sourceURL=webpack://loaders/./src/index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_title__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/title */ \"./src/components/title.js\");\n/* harmony import */ var _templates_warning_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./templates/warning.html */ \"./src/templates/warning.html\");\nfunction _objectWithoutProperties(e, t) { if (null == e) return {}; var o, r, i = _objectWithoutPropertiesLoose(e, t); if (Object.getOwnPropertySymbols) { var n = Object.getOwnPropertySymbols(e); for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]); } return i; }\nfunction _objectWithoutPropertiesLoose(r, e) { if (null == r) return {}; var t = {}; for (var n in r) if ({}.hasOwnProperty.call(r, n)) { if (-1 !== e.indexOf(n)) continue; t[n] = r[n]; } return t; }\n\n\nvar title = new _components_title__WEBPACK_IMPORTED_MODULE_0__[\"default\"]();\ntitle.create('Hello Webpack!');\nvar test = {\n  a: 'teste',\n  b: '123',\n  c: '456',\n  d: 'lalala'\n};\nvar a = test.a,\n  rest = _objectWithoutProperties(test, [\"a\"]);\nconsole.log(a, rest);\nvar body = document.querySelector('body');\nbody.innerHTML += _templates_warning_html__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n\n//# sourceURL=webpack://loaders/./src/index.js?\n}");
+
+/***/ }),
+
+/***/ "./src/templates/warning.html":
+/*!************************************!*\
+  !*** ./src/templates/warning.html ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Module\nvar code = `<p>você não pode acessar essa página</p>`;\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://loaders/./src/templates/warning.html?\n}");
 
 /***/ })
 
