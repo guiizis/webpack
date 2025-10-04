@@ -1,5 +1,8 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { Version } = require('sass');
 const TerserPlugin = require('terser-webpack-plugin');
+const webpack = require('webpack');
+const DotEnvPlugin = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -61,6 +64,11 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'styles.css'
-    })
+    }),
+    new webpack.DefinePlugin({
+      VERSION: JSON.stringify('1.0.0'),
+      PORT: 8080
+    }),
+    new DotEnvPlugin()
   ]
 }
