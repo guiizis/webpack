@@ -11,10 +11,10 @@ module.exports = {
     path: __dirname + '/dist',
     filename: '[name].[contenthash].js'
   },
-  // optimization: {
-  //   minimize: true,
-  //   minimizer: [new TerserPlugin()],
-  // },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
   mode: 'production',
   module: {
     rules: [
