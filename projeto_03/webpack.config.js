@@ -8,7 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: 'bundle.js'
+    filename: '[name].[contenthash].js'
   },
   optimization: {
     minimize: true,
@@ -64,7 +64,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles.css'
+      filename: '[name].[contenthash].css'
     }),
     new webpack.DefinePlugin({
       VERSION: JSON.stringify('1.0.0'),
