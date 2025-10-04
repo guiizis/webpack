@@ -3,6 +3,7 @@ const { Version } = require('sass');
 const TerserPlugin = require('terser-webpack-plugin');
 const webpack = require('webpack');
 const DotEnvPlugin = require('dotenv-webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -69,6 +70,7 @@ module.exports = {
       VERSION: JSON.stringify('1.0.0'),
       PORT: 8080
     }),
-    new DotEnvPlugin()
+    new DotEnvPlugin(),
+    new HtmlWebpackPlugin()
   ]
 }
