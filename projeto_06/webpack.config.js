@@ -3,7 +3,17 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: {
+      import: './src/index.js',
+      dependOn: 'shared'
+    },
+    test: {
+      import: './src/test.js',
+      dependOn: 'shared'
+    },
+    shared: 'lodash'
+  },
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: '[name].js'
@@ -27,6 +37,6 @@ module.exports = {
     new HtmlWebpackPlugin()
   ],
   optimization: {
-    runtimeChunk: { name: 'runtime'}
+    runtimeChunk: { name: 'runtime' }
   }
 }
