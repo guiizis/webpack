@@ -1,0 +1,7 @@
+.nav-item {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
