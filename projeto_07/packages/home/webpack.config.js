@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPlugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -39,5 +40,13 @@ module.exports = {
       template: './public/index.html',
       title: 'App'
     }),
+    new ModuleFederationPlugin({
+      name: 'HomeApp',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './HomePage': './src/Home'
+      },
+      shared: ['react', 'react-dom', 'reactstrap']
+    })
   ]
 }
